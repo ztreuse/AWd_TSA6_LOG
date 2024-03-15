@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://images.unsplash.com/photo-1491466424936-e304919aada7?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+.card {
+    width: 450px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 50px #000000;
+}
+
+.button-box {
+    width: 330px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;;
+    background: red;
+}
+
+.toggle-btn {
+    padding: 10px 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #e67e22;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.btn-selected {
+    background-color: #212529 !important;
+    color: #fff !important;
+    transition: background-color 0.3s ease;
+    border-radius: 15px !important; /* Add this line */
+    box-shadow: 0px 0px 15px #ffffff !important; /* Add this line */
+}
+
+.no-outline:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.custom-width {
+    width: 90% !important; /* Change to the width you want */
+    margin: auto !important;
+}
+
+.action {
+    transition: .5s;
+    font-size: x-large;
+}
+
+.action:hover {
+    box-shadow: 0px 0px 20px #ffffff;
+    scale: 1.02;
+    transition: .5s;
+    background-color: #212529;
+    font-size: x-large;
+}
+
+#flexCheckDefault:checked {
+    background-color: #212529 !important;
+    border-color: #212529 !important;
+}
